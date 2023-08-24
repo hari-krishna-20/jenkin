@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    triggers {
+        githuvbPush()
+    }
+
+    stages {
+         stage('Checkout') {
+           stpes {
+               checkout scm
+            }
+          }
+       }
+}
