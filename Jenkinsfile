@@ -1,12 +1,12 @@
 pipeline {
     agent any
     triggers {
-        githuvbPush()
+        githubPush()
     }
 
     stages {
          stage('Checkout') {
-           stpes {
+           steps {
                checkout scm
             }
           }
